@@ -4,6 +4,15 @@ return {
     enabled = false,
   },
   {
+    "brenoprata10/nvim-highlight-colors",
+    config = function()
+      require("nvim-highlight-colors").setup {
+        render = "virtual",
+        virtual_symbol = "󰧞",
+      }
+    end,
+  },
+  {
     "tpope/vim-sleuth",
   },
   {
@@ -24,7 +33,6 @@ return {
     config = true,
     -- use opts = {} for passing setup options
     -- this is equivalent to setup({}) function
-    enabled = false,
   },
   {
     "folke/snacks.nvim",
