@@ -1,0 +1,13 @@
+{
+  "main function": {
+    "prefix": "cmain",
+    "body": [
+      "#include <stdio.h>",
+      "",
+      "int main() {",
+      "\t$1",
+      "  return 0;",
+      "}"
+    ]
+  }
+}
