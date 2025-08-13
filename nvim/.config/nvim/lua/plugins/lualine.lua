@@ -1,26 +1,26 @@
 return {
-  'nvim-lualine/lualine.nvim',
-  dependencies = { 'nvim-tree/nvim-web-devicons' },
+  "nvim-lualine/lualine.nvim",
+  dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
     local mode = {
-      'mode',
+      "mode",
       fmt = function(str)
         -- return " " .. str
         -- return " " .. str
-        return ' ' .. str
+        return " " .. str
       end,
     }
 
     local opts = {
       options = {
         icons_enabled = true,
-        theme = 'auto',
-        component_separators = { left = '', right = '' },
-        section_separators = { left = '', right = '' },
+        theme = "auto",
+        component_separators = { left = "", right = "" },
+        section_separators = { left = "", right = "" },
         disabled_filetypes = {
-          'neo-tree',
-          'oil',
-          'alpha',
+          "neo-tree",
+          "oil",
+          "alpha",
         },
         ignore_focus = {},
         always_divide_middle = true,
@@ -34,17 +34,17 @@ return {
       },
       sections = {
         lualine_a = { mode },
-        lualine_b = { 'branch', 'diff', 'diagnostics' },
-        lualine_c = { 'filename' },
+        lualine_b = { "diff", "diagnostics" },
+        lualine_c = { "filename" },
         lualine_x = {
           {
-            require('lazy.status').updates,
-            cond = require('lazy.status').has_updates,
+            require("lazy.status").updates,
+            cond = require("lazy.status").has_updates,
             -- color = { fg = '#ff9e64' },
           },
         },
-        lualine_y = { 'filetype' },
-        lualine_z = { 'progress', 'location' },
+        lualine_y = { "filetype" },
+        lualine_z = { "progress", "location" },
       },
       inactive_sections = {
         lualine_a = {},
@@ -60,6 +60,6 @@ return {
       extensions = {},
     }
 
-    require('lualine').setup(opts)
+    require("lualine").setup(opts)
   end,
 }

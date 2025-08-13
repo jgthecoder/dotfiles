@@ -38,7 +38,7 @@ set.scrolloff = 999
 set.sidescrolloff = 9
 vim.cmd [[ syntax on ]]
 set.wrap = false
-set.listchars = { eol = "↲", tab = "» ", trail = "·", nbsp = "␣" }
+set.listchars = { eol = " ", tab = "» ", trail = "·", nbsp = "␣" } -- eol="↲"
 set.fillchars = { eob = " " }
 set.list = true
 
@@ -82,7 +82,3 @@ set.nrformats:remove "octal"
 set.spell = true
 set.wildignore:append ".pyc,.swp"
 set.completeopt:append "noselect"
-
--- Make floating windows transparent (0 = opaque, 100 = fully transparent)
-vim.api.nvim_set_hl(0, "NormalFloat", { link = "Normal", blend = 20 })
-vim.api.nvim_set_hl(0, "FloatBorder", { link = "NormalFloat", blend = 20 })

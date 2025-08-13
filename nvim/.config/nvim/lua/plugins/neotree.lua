@@ -1,7 +1,6 @@
 return {
   {
     "nvim-neo-tree/neo-tree.nvim",
-    enabled = false,
     branch = "v3.x",
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -14,7 +13,9 @@ return {
     ---@diagnostic disable-next-line: undefined-doc-name
     ---@type neotree.Config?
     opts = {
-      -- fill any relevant options here
+      window = {
+        width = 40,
+      },
     },
     config = function()
       vim.keymap.set("n", "<Leader>e", ":Neotree toggle float<CR>", { silent = true, noremap = true })
