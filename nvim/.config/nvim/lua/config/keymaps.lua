@@ -1,10 +1,10 @@
 local opts = { silent = true, noremap = true }
 
 -- Window navigation
-vim.keymap.set("n", "<C-h>", ":wincmd h<cr>", opts)
-vim.keymap.set("n", "<C-l>", ":wincmd l<cr>", opts)
-vim.keymap.set("n", "<C-k>", ":wincmd k<cr>", opts)
-vim.keymap.set("n", "<C-j>", ":wincmd j<cr>", opts)
+-- vim.keymap.set("n", "<C-h>", ":wincmd h<cr>", opts)
+-- vim.keymap.set("n", "<C-l>", ":wincmd l<cr>", opts)
+-- vim.keymap.set("n", "<C-k>", ":wincmd k<cr>", opts)
+-- vim.keymap.set("n", "<C-j>", ":wincmd j<cr>", opts)
 
 vim.keymap.set("n", "<tab>", ":bn<cr>", opts)
 vim.keymap.set("n", "<s-tab>", ":bprev<cr>", opts)
