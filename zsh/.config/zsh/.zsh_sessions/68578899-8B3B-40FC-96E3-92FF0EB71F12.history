@@ -1,0 +1,6 @@
+brwe
+source ~/.config/zsh/.zshrc
+brew
+echo $PATH
+mv ~/.config/zsh/.zshrc ~/.zshrc
+nvim ~/.zshenv

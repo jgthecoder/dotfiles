@@ -1,0 +1,203 @@
+# Resources::
+
+# https://zsh.sourceforge.io/Doc/Release/The-Z-Shell-Manual.html#The-Z-Shell-Manual
+# https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Shell-state
+# https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit
+# https://zsh.sourceforge.io/Doc/Release/User-Contributions.html#vcs_005finfo-Examples
+# https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Conditional-Substrings-in-Prompts
+# https://zsh.sourceforge.io/Doc/Release/Prompt-Expansion.html#Prompt-Expansion
+# https://sureshjoshi.com/development/zsh-prompts-that-dont-suck
+# https://www.madeintext.com/time-symbols/
+# https://www.alt-codes.net/check-mark-symbols.php
+# https://symbolsdb.com/x-symbols
+# https://scriptingosx.com/2019/07/moving-to-zsh-06-customizing-the-zsh-prompt/
+# https://davidmyers.dev/blog/a-guide-to-customizing-the-zsh-shell-prompt
+# .zshrc — https://github.com/mischavandenburg/dotfiles
+# https://www.youtube.com/watch?v=Xegs1fhS3I8
+
+# -------------------------------------------------------------------------------------------------------------
+#
+#      ██╗ ██████╗ ███████╗██╗  ██╗██╗   ██╗ █████╗      ██████╗ ██╗   ██╗███████╗███╗   ███╗ █████╗ ███╗   ██╗
+#      ██║██╔═══██╗██╔════╝██║  ██║██║   ██║██╔══██╗    ██╔════╝ ██║   ██║╚══███╔╝████╗ ████║██╔══██╗████╗  ██║
+#      ██║██║   ██║███████╗███████║██║   ██║███████║    ██║  ███╗██║   ██║  ███╔╝ ██╔████╔██║███████║██╔██╗ ██║
+# ██   ██║██║   ██║╚════██║██╔══██║██║   ██║██╔══██║    ██║   ██║██║   ██║ ███╔╝  ██║╚██╔╝██║██╔══██║██║╚██╗██║
+# ╚█████╔╝╚██████╔╝███████║██║  ██║╚██████╔╝██║  ██║    ╚██████╔╝╚██████╔╝███████╗██║ ╚═╝ ██║██║  ██║██║ ╚████║
+#  ╚════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝     ╚═════╝  ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+#
+# -------------------------------------------------------------------------------------------------------------
+#                                       Z-Shell Configuration File
+# -------------------------------------------------------------------------------------------------------------
+
+source_if_exists() {
+   [[ -f "$1" ]] && source "$1"
+}
+
+# -------------------------------------------------------------------------------------------------------------
+# Aliases
+# -------------------------------------------------------------------------------------------------------------
+
+aliasFile=~/.config/shell/aliases.sh
+source_if_exists "$aliasFile"
+
+# -------------------------------------------------------------------------------------------------------------
+# Functions
+# -------------------------------------------------------------------------------------------------------------
+functionFile=~/.config/shell/functions.sh
+source_if_exists "$functionFile"
+
+precmd() {
+    source_if_exists "$aliasFile"
+}
+
+# -------------------------------------------------------------------------------------------------------------
+# Environment Variables
+# -------------------------------------------------------------------------------------------------------------
+export EDITOR="nvim"
+export VISUAL="nvim"
+export PAGER="less"
+export LESS="-R"
+export BROWSER="firefox"
+
+# export TERM="xterm-ghostty"
+
+# XDG Base Directory
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$XDG_CONFIG_HOME/local/share"
+export XDG_CACHE_HOME="$XDG_CONFIG_HOME/cache"
+
+# ZDOTDIR
+# export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+
+export DOTFILES="$HOME/dotfiles"
+export SCRIPTS="$DOTFILES/scripts"
+
+# Other program settings
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+# ~/ clean-up
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
+export STARSHIP_CACHE="$XDG_CACHE_HOME/starship/cache"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export BAT_THEME="tokyonight_night"
+
+# -------------------------------------------------------------------------------------------------------------
+# Path
+# -------------------------------------------------------------------------------------------------------------
+setopt extended_glob null_glob
+# Remove duplicate entries and non-existent directories
+typeset -U path
+path=(
+    "$HOME/.local/bin"
+    "$HOME/dotfiles/bin"
+    "$HOME/dev/scripts"
+    $path
+)
+
+# -------------------------------------------------------------------------------------------------------------
+# Prompt
+# -------------------------------------------------------------------------------------------------------------
+# Uncomment the line below to use the Starship prompt
+eval "$(starship init zsh)"
+
+# source "$(brew --prefix)/opt/spaceship/spaceship.zsh"
+# Autoload zsh's `add-zsh-hook` and `vcs_info` functions
+# (-U autoload w/o substition, -z use zsh style)
+# autoload -Uz add-zsh-hook vcs_info
+
+# Set prompt substitution so we can use the vcs_info_message variable
+# setopt prompt_subst
+
+# Run the `vcs_info` hook to grab git info before displaying the prompt
+# add-zsh-hook precmd vcs_info
+
+# Style the vcs_info message
+# zstyle ':vcs_info:*' enable git
+# zstyle ':vcs_info:git*' formats '%b%u%c'
+# # Format when the repo is in an action (merge, rebase, etc)
+# zstyle ':vcs_info:git*' actionformats '%F{14}⏱ %*%f'
+# zstyle ':vcs_info:git*' unstagedstr '*'
+# zstyle ':vcs_info:git*' stagedstr '+'
+# This enables %u and %c (unstaged/staged changes) to work,
+# but can be slow on large repos
+# zstyle ':vcs_info:*:*' check-for-changes true
+
+# PROMPT='%(?.%F{green}✓%f.%F{red}✗%f) %F{blue}%2~%f %(!.#.%F{179}$%f) '
+
+# Set the right prompt to the vcs_info message
+# RPROMPT='⎇ ${vcs_info_msg_0_}'
+# RPROMPT='%F{8}⏱ %*%f'
+
+# -------------------------------------------------------------------------------------------------------------
+# History
+# -------------------------------------------------------------------------------------------------------------
+HISTFILE=$XDG_CACHE_HOME/zsh/history
+HISTSIZE=1000000
+SAVEHIST=1000000
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
+
+# -------------------------------------------------------------------------------------------------------------
+# Completion
+# -------------------------------------------------------------------------------------------------------------
+#autoload -Uz compinit
+#compinit
+
+# -------------------------------------------------------------------------------------------------------------
+# Plugins
+# -------------------------------------------------------------------------------------------------------------
+eval "$(zoxide init zsh --cmd cd)"
+# fzf, a fuzzy finder
+source <(fzf --zsh)
+bindkey "ç" fzf-cd-widget
+
+source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+# -------------------------------------------------------------------------------------------------------------
+# Key Bindings
+# -------------------------------------------------------------------------------------------------------------
+# bindkey -e
+# bindkey '^[[1;5C' forward-word
+# bindkey '^[[1;5D' backward-word
+
+# -------------------------------------------------------------------------------------------------------------
+# Options
+# -------------------------------------------------------------------------------------------------------------
+
+# see 'man zshoptions' for more info
+setopt autocd
+setopt prompt_subst
+stty stop undef
+
+# -------------------------------------------------------------------------------------------------------------
+# Miscellaneous Settings
+# -------------------------------------------------------------------------------------------------------------
+# Rust
+. "/Users/Joshua/.config/local/share/cargo/env"
+
+# pnpm
+export PNPM_HOME="/Users/Joshua/Library/pnpm"
+case ":$PATH:" in
+*":$PNPM_HOME:"*) ;;
+*) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# bun completions
+[ -s "/Users/Joshua/.bun/_bun" ] && source "/Users/Joshua/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

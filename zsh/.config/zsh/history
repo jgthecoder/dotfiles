@@ -1,0 +1,1122 @@
+mkdir .cache/zsh
+touch .cache/zsh/history
+ssh jgthecoder@192.168.64.3 -p 8233
+cat $HISTFILE
+nvim ~/.bashrc
+nvim .vimrc
+touch foo.bar
+mv foo.bar ~/Downloads
+rm ~/Downloads/foo.bar
+ssh jgthecoder
+sudo nvim /etc/zsh/zshenv
+echo $SHELL
+mv .zshrc .zshrc.old
+brew
+nvim ~/.zshrc.old
+nvim ~/.zshrc.bak
+cd cache
+source ~/.zshrc
+echo $ZDOTDIR
+mv ~/.zshrc $ZDOTDIR
+ls -lah $ZDOTDIR
+source ~/.config/zsh/.zshrc
+source ~/.zshenv
+which zrc
+echo $EDITOR
+vim ~/.vimrc
+brew install eza
+rm .zshrc.omz-uninstalled-2025-07-04_01-36-48
+brew install zsh-syntax-highlighting zsh-autosuggestions
+brew install fzf zoxide
+pnpm --version
+history | less
+lcear
+brew install tmux
+history | grep ssh
+echo $HISTFILE
+tmux new -s ubuntu
+ssh jgthecoder@192.168.64.3 -p 22
+vim ~/.zshenv'
+vim ~/.zshenv
+echo $STARSHIP_CONFIG
+cd '
+vim .zshrc
+source .zshenv
+tmux kill
+tmux kill-session 0a
+tmux kill-session -a
+echo $STARSHIP_CACHE
+vim .zshenv
+vim $ZDOTDIR/.zshrc
+tmux new -s dev
+brew install tldr
+brew install bat
+brew install htop btop
+tldr bat
+man bat
+bat -p .zshenv
+bat -n .zshenv
+bat -pn .zshenv
+zrc
+cat .zshenv
+node index.ts
+tsc --version
+tsc index
+tsc index.ts
+tsc --help
+node index.js
+tsc --watch
+node index
+node test
+node test.js
+which node
+pnpm test.js
+pnpm test
+npm --version
+nvm --version
+npm install
+nvm install 20
+npm install lucide-react
+rm my-nextjs-app
+pnpm create next-app@latest
+docker run --name drizzle-postgres -e POSTGRES_PASSWORD=mypassword -d -p 5432:5432 postgres
+brew install git
+brew list zsh
+brew install zsh
+pnpm install
+pnpm i -D prettier prettier-plugin-tailwindcss
+cd repos nexjs
+npm install -g pnpm
+vim ~/.config/starship/starship.toml
+mkdir src/lib
+mkdir src/ui
+git commit -m "starter init"
+git commit -m "add db folder and initial files"
+echo 'export PATH="/usr/local/bin:$PATH"' >> ~/.zprofile
+echo 'export PATH="/opt/homebrew/bin:$PATH"' >> /Users/Joshua/.config/zsh/.zshrc
+which git
+git remote add origin git@github.com:jgthecoder/nextjs-starter.git\
+git branch -M main\
+git push -u origin main
+brew install pnpm
+brew upgrade eza
+brew upgrade ninja
+npm i -g prettier
+cat ~/.prettierrc | pbcopy
+git commit -m "update default homepage"
+git commit -m "update default font to inter"
+cd ..;
+rm nexus-dashboard
+cd nex
+pnpm install react-icons
+git commit -m "add react icons"
+pnpm add react-icons
+git commit -m "add basic header component"
+pnpm run db:generate:migrations
+pnpm drizzle-kit studio
+pnpm run db:studio
+pnpx drizzle-kit push
+pnpm drizzle-kit push
+pnpm drizzle-kit pull
+pnpm run db:generate:migration
+pnpm run db:migrate
+pnpm tsx src/db/index.ts
+git clone git@github.com:jgthecoder/nexus-dashboard.git
+cd nexus-dashboard
+pnpm add lucide-react
+mkdir app
+cd app
+brew install oven-sh/bun/bun
+bun init
+bun index.ts
+bun --watch index.ts
+bun run dev
+bun dev
+bun install hono
+rm app
+cd dev
+cd nextjs-blog-example
+code --help
+npm init
+npm i nodemon
+npm i node-fetch
+node -v
+curl -v https://pokeapi.co/api/v2/pokemon/pikachu
+touch index.html
+touch style.css app.js
+cd dev demos
+cd de
+cd helo
+cd hello
+npx create-next-app@latest
+rm hello-world
+code -r .
+pnpx create-next-app@latest
+btop
+git clone https://github.com/neovim/neovim
+which nvim
+cleq
+pnpm add typescript -D
+tsc --init
+pnpm tsc
+node --watch hello.js
+sfltool resetbtm
+sudo sfltool resetbtm
+cd .local
+cd bin
+nvim $ZDOTDIR/.zhrc
+git-branch-manager 
+git-branch-manager.sh
+brew install gum
+brew upgrade
+update_repos.sh
+npx npkill
+defaults delete com.apple.dock; killall Dock
+cd code/
+cd projects/demos
+npx create-next-app@latest nextjs-blog --use-pnpm --example "https://github.com/vercel/next-learn/tree/main/basics/learn-starter"
+cd nextjs-blog
+rm nextjs-blog
+npx create-next-app@latest nextjs-dashboard --example "https://github.com/vercel/next-learn/tree/main/dashboard/starter-example" --use-pnpm
+cd nextjs-dashboard
+pnpm tsx app/seed/route.ts
+pnpx drizzle-kit push\
+
+docker run --name nextjs-tutorial-db -e POSTGRES_PASSWORD=mypassword -d -p 5433:5433 postgres
+npx drizzle-kit push\
+
+npx drizzle-kit pull:pg 
+docker restart nextjs-tutorial-db
+docker kill 97a47b60d505
+docker run --name testing -e POSTGRES_PASSWORD=mypassword -d -p 5432:5432 postgres
+npx drizzle-kit studio
+npx drizzle-kit pull
+pnpm tsx src/lib/seedData.ts
+cd code/projects/demos/nextjs/routing
+pnpm add clsx
+pnpm install -D prettier prettier-plugin-tailwindcss
+touch .prettierrc
+docker run --name drizzle-postgres -e POSTGRES_PASSWORD=mypassword -d -p 5433:5432 postgres\
+
+pnpx db:generate
+npx run db:generate
+npm run db:generate
+pnpm db:generate
+pnpm db:migrate
+pnpm db:studio
+pnpm add drizzle-seed
+echo "export HOMEBREW_NO_AUTO_UPDATE=1" >> $ZDOTDIR/.zshrc
+brew install --cask spotify
+ipconfig
+ifconfig
+ifconfig | grep ipv43
+ifconfig | grep ipv4
+tldr ifconfig
+ifconfig -a
+tldr ipconfig
+ipconfig getiflist
+tsc
+node extra
+pnpm init -y
+pnpm add -D typescript
+npx tsc --init
+npx tsc
+npx tsc -w
+npm tsx index
+npm help
+pnpm add -D gts
+npx gts init
+npm compile
+npm run compile
+node build/index
+cd code project
+pnpx create-next-app@latest backend-example
+cd backend-example
+code l
+code .
+pnpm dlx shadcn@latest add
+pnpm dlx shadcn@latest add avatar form select toast
+pnpm dlx shadcn@latest add avatar form select sonner
+pnpm dlx shadcn@latest label
+pnpm dlx shadcn@latest add label
+npm run dev
+pnpm add drizzle-orm @neondatabase/serverless dotenv\
+pnpm add -D drizzle-kit tsx
+pnpm add next-auth@beta
+npx auth secret
+touch src/app/api/auth/[...nextauth]/route.ts
+mkdir -p src/app/api/auth/[...nextauth]
+mkdir src/app/api/auth/[...nextauth]
+npx nypm i
+pnpm add @kinde-oss/kinde-auth-nextjs
+nvim ~/code/archive/learn-nextjs
+pnpm i
+pnpm add drizzle-orm postgres dotenv\
+pnpm add -D drizzle-kit tsx
+pnpm dlx shadcn@latest init
+pnpm dlx shadcn@latest add button
+pnpm init
+pnpm add express
+touch app.js
+cat <<EOF\
+Hello world!\
+This is a heredoc.\
+EOF
+node app.js
+pnpm add jsonwebtoken
+git checkout v0.11
+git checkout stabe
+cd demos/nextjs/hello-world
+nvim ~/.config/zsh/.zshrc
+mkdir NeoVim
+cd NeoVim
+neovim
+brew install rg
+brew install lua-language-server
+lua-language-server
+cd code demos 
+cd hello-world
+cd ../../git
+unzip task-tracker.zip
+rm task-tracker.zip
+cd task-tracker
+tldr eza
+l -R
+l --hyperlink
+l -d
+l --list-dirs
+l .
+l --list-dirs .
+l --all -F
+l -
+l -F
+mkdir ProjectName
+touch README.md
+echo "# ProjectName" >> README.md
+ls -lah
+rm .git
+mv README.md ProjectName
+/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -dump| grep '.*path.*1Password Browser Helper'
+git remote add origin git@github.com:jgthecoder/ProjectName.git
+touch .gitignore
+mkdir tests
+mkdir src
+cd src
+mkdir model view controller
+git ls
+git ls-files
+tldr git
+tldr git status
+git status -b
+git status -s
+git status -sb
+git commit -m "Add project directories"
+git switch -c feature
+git switch -c main
+git switch -c release
+git switch feature
+cd ProjectName
+echo hello world
+cd nextjs
+rm nextjs-dashboard
+cd code/projects
+cd fullstack-app
+rm fullstack-app
+mkdir myapp
+cd myapp
+pnpm add -D prettier prettier-plugin-tailwindcss
+touch .prettierrc.json
+nvim .prettierrc.json
+nvim ~/.config/nvim
+echo $XDG_CACHE_HOME
+cd routing
+go
+brew uninstall aerospace
+which z
+which cd
+__zoxide_z config nvim
+nvim ~/.zshrc
+tldr curl
+man curl
+brew install fastfetch
+da
+echoi $OLDPWD
+echo $OLDPWD
+-
+command ls -lFh
+command ls -lFh --color=always
+command ls -aFh â€ƒ´-color=always
+home
+which home
+....
+which cp
+tldr cp
+ls -aFh â€ƒ´-color=always
+tldr ls
+tldr xattr
+xattr src/app/(root)/page.tsx
+xattr -l src/app/(root)/page.tsx
+xattr -l src
+xattr -l public
+tldr xargs
+lx
+ls -lX
+ls -lXB
+ls -lXBh
+lk
+lm
+labc
+ldir
+lla
+las
+lls
+lu
+lr
+lw
+lc
+h
+which h
+history | grep
+h which
+history | grep h
+zi
+history
+vim text.txt
+nvim test.txt
+cd demos
+z demos
+mkdir mycli
+cd mycli
+npm init -y
+npm install -g .
+clar
+npm i yargs
+mycli
+..
+rm mycli
+uptime
+z dotfiles
+cd ~/repos
+cd ~/code/repos
+brew install hugo
+hugo version
+hugo new site quickstart\
+cd quickstart\
+git init\
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke\
+echo "theme = 'ananke'" >> hugo.toml\
+hugo server
+hugo new content content/posts/my-first-post.md
+hugo mod get github.com/panr/hugo-theme-terminal/v4
+git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal
+git submodule add -f https://github.com/g1eny0ung/hugo-theme-dream themes/dream
+git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
+git submodule add https://github.com/luizdepra/hugo-coder.git themes/hugo-coder
+mv quickstart personal-blog
+cd personal-blog
+hugo new code-snippets/index.md
+git remote add origin git@github.com:jgthecoder/personal-blog.git\
+git branch -M main\
+git push -u origin main
+git remote add origin git@github.com:jgthecoder/personal-blog.git
+gaa
+git commit -m "Initial commit"
+hugo
+brew install --cask vivaldi
+z repos 
+mkdir blogapp
+cd blogapp
+hugo new site .
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+hugo server
+hugo new content posts/my-first-post.md
+hugo new content my-first-post.md
+hugo server -D
+touch .profile
+which reload
+timer
+nvim .profile
+nvim ~/.zprofile
+rm .zprofile
+nvim ~/.profile
+pwd
+cd nextjs-starter
+cd repos 
+z repos
+git status
+nvim ~/.config/zsh
+z config nvim
+z nextjs-starter
+status
+echo $status
+z config zsh
+relod
+cd repos starter
+open -a Docker
+docker pull ubuntu
+docker run -it --name my-ubuntu ubuntu
+mkdir docker
+brew install fzf
+fzf
+nvim .zshrc.ba
+nvim .zshrc.bak
+docker start -ai my-ubuntu
+touch Dockerfile
+nvim $ZDOTDIR/functions.sh
+relaod
+dcoker
+docker run --name mycontainer -e CONTAINER_NAME=mycontainer -it ubuntu
+docker build
+cd code docker
+cat Dockerfile| pbcopy
+docker-ubuntu stop
+docker-ubuntu stop nautilus
+docker-ubuntu
+docker-ubuntu remove c866f9fd9f4f3a1230089886c805958ae9f134167873d9d949da36c88a67d020
+nvim Dockerfile 
+docker-ubuntu run
+docker
+docker-ubuntu run test
+docker-ubuntu start
+docker-ubuntu start test
+nvim Dockerfile
+tmux a -t docker
+brew install yazi
+brew tap FelixKratz/formulae\
+brew install sketchybar
+mkdir -p ~/.config/sketchybar/plugins\
+cp $(brew --prefix)/share/sketchybar/examples/sketchybarrc ~/.config/sketchybar/sketchybarrc\
+cp -r $(brew --prefix)/share/sketchybar/examples/plugins/ ~/.config/sketchybar/plugins/
+brew services start sketchybar
+brew install --cask font-hack-nerd-font
+nvim ~/.config/sketchybar/sketchybarrc
+brew services restart sketchybar
+brew services stop sketchybar
+nvim ~/code/repos/dotfiles
+builtin cd -- /Users/Joshua/.config
+builtin cd -- /Users/Joshua/.config/nvim
+vim .config/configs.txt 
+docker-ubuntu remove nautilus
+docker remove hello-world
+docker stop hello-world
+docker pull hello-world 
+docker run hello-world
+docker pull hello-world
+docker image ls
+docker run nginx
+docker run -p 80:80 nginx
+docker run -p 5000:80 nginx
+docker run -p 5000:80 -d nginx
+docker kill quirky_bell
+docker kill my-nginx
+docker run -p 5000:80 -d --name my-nginx nginx
+docker container prune
+docker pull python:3.12-slim
+docker run -v mydata:/data python:3.12 python -c 'f="/data/data.txt";open(f, "a").write("Ran!\n");print(open(f).read())
+docker run -v mydata:/data python:3.12 python -c 'f="/data/data.txt";open(f, "a").write("Ran!\n");print(open(f).read())'
+mkdir mydata
+docker run -v ./mydata:/data python:3.12 python -c 'f="/data/data.txt";open(f, "a").write("Ran!\n");print(open(f).read())
+docker run -v ./mydata:/data python:3.12 python -c 'f="/data/data.txt";open(f, "a").write("Ran!\n");print(open(f).read())'
+ls mydata
+cd frontend/
+docker build -t mysite .
+docker build -t mysite -f ./Dockerfile .
+docker run -p 80:80 mysite
+vim hello
+pnpm dev
+brew install --cask monitorcontrol
+ssh Joshua@joshua-mba-wls-airpt
+docker dev
+pnpx create-next-app@latest .
+pnpm install drizzle-orm pg postgres\
+pnpm install -D drizzle-kit
+docker run --name drizzle-postgres -e POSTGRES_PASSWORD=mypassword -d -p 5432:5432 postgres\
+
+docker ps -a
+pnpm add drizzle-orm pg dotenv\
+pnpm add -D drizzle-kit tsx @types/pg
+nvm_dir="${NVM_DIR:-~/.nvm}"
+nvm unload
+rm -rf "$nvm_dir"
+command rm -rf "$nvm_dir"
+tmux a -t main
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+node --verison
+node --version
+npx drizzle-kit push
+pnpm run dev
+nvim ~/.config/tmux/tmux.conf
+brew install direnv
+nvim $ZDOTDIR/extras.sh
+cd code/repos/personal-blog
+cat ._zshrc
+mkdir -p archive; mv ._zshenv ._zshrc archive/
+cd archive
+mv ._zshenv zshenv
+mv ._zshrc zshrc
+dotfiles
+repos
+code
+~/code/repos
+pnpm
+nvim $ZDOTDIR
+cd $ZDOTDIR
+git clone https://github.com/LukeSmithxyz/mutt-wizard\
+cd mutt-wizard\
+sudo make install
+nm
+man nm
+which nm
+brew install isync
+brew install msmtp 
+brew install pass
+brew install neomutt
+pass init jgthecoder@gmail.com
+man pass
+gpg --full-generate-key`
+pgp
+gpg
+man ggg
+man gpg
+mw -a jgthecoder@gmail.com
+mw -D jgthecoder@gmail.com
+mwcccccbhivbihdthrfrthnrjbnucncbgeeihuinvrlbnl
+gpg --help
+gpg --full-generate-key
+gpg --list-keys
+gpg --edit-key
+gpg --edit-key joshua.guzman.514@gmail.com
+mw
+neomutt
+tldr pass
+pass init joshua.guzman.514@gmail.com
+pass
+mw add
+mw -d joshua.guzman.514@gmail.com
+mw -a joshua.guzman.514@gmail.com
+mw -l
+mw -r
+mw -D joshua.guzman.514@gmail.com
+mw -a joshua.guzman@protonmail.com
+bun create better-t-stack@latest my-better-t-app --yes --database postgres --db-setup docker
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"\
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+nvm use 20
+bun create better-t-stack@latest my-better-t-app --yes --frontend next --backend next --database postgres --db-setup docker
+code /Users/Joshua/code/projects/demos/my-better-t-app
+nvim ~/code/projects/learn-cpp
+cd projects learn-cpp
+cd learn-cpp
+gcc main.cpp
+clang
+which clang
+clang main.cpp
+brew install clang
+g++ --version
+touch helloworld.cpp
+xcode-select --install
+g++ main.cpp -o main
+brew doctor
+brew cleanup
+cd "/Users/Joshua/code/projects/learn-cpp/output"
+./"main"
+c;g++ main.cpp -o main
+./main
+mkdir learn-c
+which rm
+rm -rf ~/.local/share/nvim/*
+pnpm setup
+brew install stow
+mkdir test
+touch test/.test
+stow --target $HOME/.config test
+cd .local/bin
+git --version
+generate_report.sh
+cat $HOME/Logs/system_report.txt
+$ echo "I am in the $PWD folder" | sed 's/folder/directory/'
+echo "I am in the $PWD folder" | sed 's/folder/directory/'
+brew --help
+brew leaves
+mkdir tmp
+cd tmp
+vim example.txt
+nvim example.txt
+ls /dev
+tree
+cd --
+source setup.sh
+rm $HOME/.config/tmux/tmux.conf
+rm $HOME/.config/tmux
+rm -r $HOME/.config/tmux
+rm -rf $HOME/.config/tmux
+tmu
+nvim tmp/example.txt
+cd projects
+mkdir shell-scripting-tutorial
+cd shell-scripting-tutorial
+nvim first.sh
+source first.sh
+chmod u+x first.sh
+./first
+./first.sh
+nvim first2.sh
+chmod u+x first2.sh
+./first2.sh
+source var.sh
+expr hello + 1
+expr "hello" + 1
+source var2.sh
+MYVAR=hello
+source myvar2.sh
+. ./user.sh
+man touch
+ghostty +list themes
+ghostty +listthemes
+nvim ~/.config/starship/starship.toml
+false
+cd learn-c
+cd ../learn-c
+brew install bob
+bob install 0.11
+bob install v0.11
+bob install v0.11.3
+bob use v0.11.3
+mv .config/nvim .config/nvim_ancient
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+brew uninstall bob
+curl https://sh.rustup.rs -sSf | sh\
+
+echo '. "$HOME/.cargo/env"' >> $ZDOTDIR/.zshrc
+cargo install bob-nvim
+git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ~/zsh_plugins/fast-syntax-highlighting
+bob install nightly
+bob use nightly
+bob --version
+bob lost
+bob list
+nvim --verison
+cargo remove bob-nvim
+cargo
+cargo uninstall bob-nvim
+bob
+mv ~/.config/nvim_ancient ~/.config/nvim
+code ~/code/projects/myapp
+which acagt
+bat .vimrc
+echo > .vimrc
+cat .vimrc
+cd code projects
+mkdir python-projects
+cd python-projects/
+mkdir -p montreal-weather-prediction
+cd montreal-weather-prediction/
+pip install -r requirements.txt
+python3 --version
+pip3 --version
+pip3 install -r requirements.txt
+python3 -m venv venv
+source venv/bin/activate && pip install -r requirements.txt
+source venv/bin/activate && pip install numpy pandas scikit-learn matplotlib seaborn
+python predict_weather.py
+mkdir -p /Users/Joshua/code/projects/python-projects/dsa-learning
+which stow
+python3 /Users/Joshua/code/projects/python-projects/dsa-learning/main.py
+cd /Users/Joshua/code/projects/python-projects/dsa-learning && python3 -c "\
+from data_structures.stack_demo import StackDemo\
+demo = StackDemo()\
+demo.run()\
+"
+cd /Users/Joshua/code/projects/python-projects/dsa-learning && python3 -c "\
+from data_structures.queue_demo import QueueDemo\
+demo = QueueDemo()\
+demo.run()\
+"
+cd /Users/Joshua/code/projects/python-projects/dsa-learning && echo "1" | python3 main.py
+find /Users/Joshua/code/projects/python-projects/dsa-learning -type f -name "*.py" -o -name "*.md" -o -name "*.txt" | sort
+R
+mkdir -p /Users/Joshua/dotfiles
+cd /Users/Joshua/dotfiles && git init
+cd /Users/Joshua/dotfiles && mkdir -p zsh git vim tmux
+ls -la /Users/Joshua/ | grep '^\.'
+cd /Users/Joshua && find . -maxdepth 1 -name ".*" -type f | head -10
+cd /Users/Joshua && ls -la .zshrc .gitconfig 2>/dev/null || echo "Some files not found"
+cd /Users/Joshua/dotfiles && mkdir -p zsh/.config vim
+cd /Users/Joshua/dotfiles && cp /Users/Joshua/.vimrc vim/.vimrc
+cd /Users/Joshua/dotfiles && cp /Users/Joshua/.zshenv zsh/.zshenv
+cd /Users/Joshua/dotfiles && cp /Users/Joshua/.profile zsh/.profile
+cd /Users/Joshua/dotfiles && cp /Users/Joshua/.fzf.zsh zsh/.fzf.zsh
+cd /Users/Joshua/dotfiles && tree -a
+cd /Users/Joshua && mkdir -p backup_dotfiles
+cd /Users/Joshua && mv .vimrc .zshenv .profile .fzf.zsh backup_dotfiles/
+cd /Users/Joshua/dotfiles && stow -n --ignore=.DS_Store vim
+cd /Users/Joshua/dotfiles && stow --ignore=.DS_Store vim
+ls -la /Users/Joshua/.vimrc
+cd /Users/Joshua/dotfiles && stow --ignore=.DS_Store zsh
+ls -la /Users/Joshua/.zshenv /Users/Joshua/.profile /Users/Joshua/.fzf.zsh
+cd /Users/Joshua/dotfiles && git add .
+cd /Users/Joshua/dotfiles && git commit -m "Initial dotfiles setup with stow\
+\
+- Added vim configuration (.vimrc)\
+- Added zsh configuration (.zshenv, .profile, .fzf.zsh)\
+- Added README with setup instructions\
+- Added .gitignore for common unwanted files"
+which gh
+git config --global user.name
+git config --global user.email
+brew install gh
+gh auth login
+gh repo create dotfiles --private --description "My personal dotfiles managed with GNU Stow" --source=.
+gh repo list --limit 10
+gh repo view jgthecoder/dotfiles
+git remote add origin https://github.com/jgthecoder/dotfiles.git
+git fetch origin
+git log --oneline origin/main
+git ls-tree origin/main
+git pull origin main --allow-unrelated-histories
+ls -la
+git remote set-url origin git@github.com:jgthecoder/dotfiles.git
+git push -u origin main
+gh repo view --web
+gh repo view
+cd documents
+mkdir Notes
+cd Notes
+nvim nail-care.md
+nvim $ZDOTDIR/.zshrc'
+rm ~/zsh_plugins/zsh-autocomplete
+rm -rf ~/zsh_plugins/zsh-autocomplete
+fastfetch
+brew install --cask hiddenbar
+brew uninstall --cask hiddenbar
+cd repos
+git clone
+git clone --depth=1 git@github.com:jgthecoder/temp-catch-all.git
+cp ~/.config/nvim temp-catch-all
+cp -r ~/.config/nvim temp-catch-all
+cd temp-catch-all
+git add -A
+git commit -m "add old nvim config"
+cd zsh
+cat .zshrc.bak
+cat .zshrc
+cat local.sh
+nvim .zshrc
+source $ZDOTDIR/.zshrc
+cl
+cd config
+cd sources
+cd neovim
+git checkout master
+git pull
+cd config 
+mkdir nvim
+nvim ]
+brew install --cask font-agave-nerd-font
+brew install --cask font-ubuntu-mono-nerd-font
+nvim init.lua
+cd sources nvim
+cd sources neovim
+git checkout stable
+make CMAKE_BUILD_TYPE=RelWithDebInfo
+sudo make install
+nvim --version
+rm nvim
+mv ~/code/repos/temp-catch-all/nvim nvim
+cd nvim
+which termclock
+cat $ZDOTDIR/aliases.sh
+brew install tty-clock
+tty-clock
+tty-clock -c -C 1
+tty-clock -c -C 2
+tty-clock -c -C 3
+tty-clock -c -C 4
+tty-clock -c -C 4 -S
+echo "tty-clock -c -C 4 -S" | pbcopy
+source $ZDOTDIR/aliases.sh
+termclock
+source $ZDOTDIR/functions.sh
+docker-ubuntu help
+cd docker
+docker-ubuntu build
+docker-ubuntu remove challenger
+docker-ubuntu run challenger
+docker ls
+docker --help
+docker ps
+tmux new -s docker
+docker-ubuntu run nautilus
+docker-ubuntu start challenger
+cd code
+ssh coffeedotshop
+ssh terminaldotshop
+ssh terminal.shop
+source posix-template.sh 
+source posix-template.sh -h
+chmod +x posix-template.sh
+./posix-template.sh -h
+posix-template.sh -h
+posix-template.sh myfile.txt
+posix-template.sh brew-stuff.sh
+posix-template.sh git-branch-manager.sh
+nvim posix-template.sh
+sh
+dash
+cd code repos
+mkdir coffee-recipes
+cd coffee-recipes
+git add espresso.md\
+git commit -m "Add espresso recipe"
+nvim ~/.config/git/config
+nvim cold-brew.md
+git add cold-brew.md\
+git commit -m "Add cold brew recipe"
+nvim espresso.md
+git add espresso.md\
+git commit -m "Add serving suggestion to espresso recipe"
+nvim README.md
+git switch -c add-readme\
+git add README.md\
+git commit -m "Add README with project overview"
+git log
+git log --decorate
+git log --graph
+git log --graph --all
+git merge add-readme -m "Merge add-readme branch: add README with project overview"
+git branch -D add-readme
+git switch -c add-iced-coffee
+nvim iced-coffee.md
+git add iced-coffee.md\
+git commit -m "Add iced coffee recipe"
+git switch main\
+echo "# Tea" > tea.md\
+git add tea.md\
+git commit -m "Add tea recipe"
+git rebase -h
+git rebase
+man git-rebase
+git switch add-iced-tea
+git switch add-iced-coffee
+git rebase main
+ll --icons
+ls --icons
+which ls
+nvim $ZDOTDIR/aliases.sh
+eza -aFh --color=always
+cd downloads
+cat task-tracker-gitflow-readme.md
+git merge add-iced-coffee
+git branch -D add-iced-coffee
+cler
+cd local bin
+ehco $PATH
+echo $PATH
+path
+cd repos dotfiles
+git-branch-manager
+nvim test.c
+cd config zsh
+mkdir shellconfig
+cd shellconfig
+nvim git_aliases
+stow shellconfig --target=~/.config
+stow -t shellconfig --target=~/.config
+stow -t shellconfig --target="~/.config"
+stow -t shellconfig --target="~/.config/"
+stow --target $HOME/.config shellconfig
+stow -D git_aliases
+stow -D
+stow -D shellconfig
+stow --target $HOME/.config/shellconfig shellconfig
+cd -
+mv ../shellconfig .
+mv shellconfig ..
+alias | grep ls
+lt
+ls git
+l git
+ll git
+rm git
+ll tmux
+cd code 
+mkdir luaplugins
+mkdir testplugin && cd testplugin
+nvim 
+cd ../..
+cd luaplugins
+rm testplugin.nvim
+mim
+mkdir testplugin.nvim
+mkdir lua
+mkdir plugin
+cd lua
+touch testplugin.lua
+cd code luaplugins
+cd testplugin.nvim
+which g
+cd
+mkdir example_dotfiles
+cd example_dotfiles
+mkdir .config
+mkdir dir1 dir2
+touch dir{1,2}/file{1..3}
+l --tree
+stow .config --target=$HOME/.config
+cd ~/.config
+rm nvimexample
+rm NeoVim
+rm rest-client
+rm glow
+mkdir dotfiles
+echo "# Dotfiles" >> README.md
+git init
+which cat
+bat --list-themes | fzf --preview="bat --theme={} --color=always ~/.zshenv"
+nvim .zshenv
+nvim ~/.zshenv
+bat
+bat ~/.zshenv
+ga
+which gc
+gc "Initial commit: add readme"
+git switch -c dev
+git switch -c add-nvim-config 
+which mkdir
+mkdir nvim/.config
+mv ~/.config/nvim nvim/.config
+eza --tree
+yazi
+stow nvim
+ls ~/.config/nvim
+ll ~/.config/nvim
+gc "Add nvim config"
+git merge add-nvim-config
+gl
+git branch -D add-nvim-config
+git branch -c add-tmux-config
+git switch add-tmux-config 
+tmux 
+while true; echo $RANDOM;done
+while true; do echo $RANDOM; done 
+bat --list-themes | fzf --preview="bat --theme={} --color=always /path/to/file"
+#1754968528
+zsh
+#1755052089
+bash
+git add
+cd ..
+cd ../../
+rm .git/index.lock
+git commit -m "nvim: add nvim-highlight-colors plugin"
+ghostty +list-themes
+tmux a -t
+tmux
+docker-ubuntu start  nautilus
+tmux new -s main
+cd 
+mkdir tmux
+mv ~/.tmux.conf tmux
+stow tmux
+ls ~/.tmux.conf
+ls ~/.tmux.conf -l
+ls -l ~/.tmux.conf
+gc "Add tmux config"
+git rebase dev
+git merge add-tmux-config
+git branch -D add-tmux-config
+brew install pure
+which zsh
+exit
+cd config nvim
+cd repos coffee
+git branch
+git switch -c test
+git branch -D test
+nvim $ZDOTDIR/.zshrc
+reload
+la
+ls -lahtr
+tmux a
+nvim .
+gc "Modify a couple of plugin specs"
+nvim ~/.vimrc
+ls .vimrc
+ls -l .vimrc
+vim .vimrc
+brew install --cask keycastr
+nvim
+cd dotfiles
+mkdir vim
+mv ~/.vimrc vim
+stow vim
+ls -l ~/.vimrc
+vim
+rm .DS_Store
+ga _A
+gc "Add vim config"
+git lg
+ls
+cat README.md
+git remote add origin git@github.com:jgthecoder/dotfiles.git
+git switch main
+git push
+git switch dev
+tmux list-sessions
+tmux a -t config
+l
+rm dir1 dir2
+clea
+ll
+tmux new -s config
+cd .config
+c
+nvim ~/.tmux.conf
+man tmux
+ga -A
+gc "Change tmux inactive window style"
+gp
+which gp
+gs
+clear
+: 1755201416:0;ll
+: 1755201439:0;git switch -c add-ghostty-config
+: 1755201447:0;mkdir ghostty/.config
+: 1755201459:0;mv ~/.config/ghostty ghostty/.config/
+: 1755201462:0;tree
+: 1755201471:0;eza --tree
+: 1755201483:0;tree ghostty
+: 1755201487:0;cd ghostty
+: 1755201489:0;ll
+: 1755201491:0;cd .config
+: 1755201492:0;ll
+: 1755201495:0;cd ghostty
+: 1755201496:0;ll
+: 1755201499:0;rm .DS_Store
+: 1755201504:0;cd dotfiles
+: 1755201517:0;ll
+: 1755201536:0;stow ghostty
+: 1755201541:0;c
+: 1755201542:0;ll
+: 1755201556:0;cd ghostty
+: 1755201557:0;ll
+: 1755201566:0;gs
+: 1755201577:0;cat other.rtf
+: 1755201592:0;cat ghostty/.config/ghostty/other.rtf
+: 1755201613:0;which cat
+: 1755201628:0;bat ghostty/.config/ghostty/other.rtf
+: 1755201647:0;rm ghostty/.config/ghostty/other.rtf
+: 1755201649:0;gs
+: 1755201656:0;ga -A
+: 1755201661:0;gc "Add ghostty config"
+: 1755201668:0;git rebase dev
+: 1755201675:0;git switch dev
+: 1755201684:0;git merge add-ghostty-config
+: 1755201693:0;git branch -D add-ghostty-config
+: 1755201698:0;gp
+: 1755201702:0;git lg
+: 1755201780:0;cd .config
+: 1755201782:0;c
+: 1755201783:0;ll
+: 1755201840:0;mkdir zsh/.config
+: 1755201854:0;mv ~/.config/zsh zsh/.config/
