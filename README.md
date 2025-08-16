@@ -12,7 +12,8 @@ git clone git@github.com:jgthecoder/dotfiles.git $HOME/dotfiles
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-> ![Note]
+> 🚧 Warning
+>
 > Don't forget to run the commands at the end of the homebrew install!
 > Otherwise, homebrew will not be added to your path!
 
