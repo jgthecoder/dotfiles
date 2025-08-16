@@ -27,3 +27,6 @@ brew bundle --file="$HOME/dotfiles/Brewfile"
 stow $HOME/dotfiles
 ```
 
+## Recommended Apps
+
+- F.lux -> remove blue light from your screen at night
