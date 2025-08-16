@@ -1,11 +1,11 @@
-# Aliases for dev tools
+#!/usr/bin/env zsh
+
 alias l='ls -CF'
 alias ll='ls -l'
 alias la='ls -lathr'
 
 alias ..='cd ..'
 alias ...='cd ../..'
-alias -- -='cd -'
 
 alias c='clear'
 alias v='nvim'
@@ -14,6 +14,9 @@ alias py='python3'
 alias mk='make'
 alias serve='python3 -m http.server'
 alias termclock='tty-clock -c -C 4 -S'
+alias screensaver="cmatrix"
+alias find='fd'
+alias cat='bat -pn' # bat over cat
 
 # Git helpers
 alias gs='git status'

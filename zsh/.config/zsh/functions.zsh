@@ -1,8 +1,8 @@
-# ~/.config/zsh/functions.sh
+#!/usr/bin/env zsh
 
 # Create and enter directory
 mkcd() {
-  mkdir -p -- "$1" && cd -- "$1"
+  mkdir -p "$1" && cd "$1"
 }
 
 # Extract common archive types
@@ -50,21 +50,21 @@ reload() {
   source "$ZDOTDIR/.zshrc" && echo "Reloaded .zshrc"
 }
 
-git_branch_status() {
-  git rev-parse --is-inside-work-tree >/dev/null 2>&1 || return
-
-  branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null) || return
-  unstaged_status=$(git diff --shortstat 2>/dev/null)
-  staged_status=$(git diff --cached --shortstat 2>/dev/null)
-
-  added=$(echo "$unstaged_status $staged_status" | grep -oE '[0-9]+ insert' | awk '{s+=$1} END {print s+0}')
-  removed=$(echo "$unstaged_status $staged_status" | grep -oE '[0-9]+ delet' | awk '{s+=$1} END {print s+0}')
-
-  printf '(%s' "$branch"
-  [ "$added" -ne 0 ] && printf ' +%s' "$added"
-  [ "$removed" -ne 0 ] && printf ' -%s' "$removed"
-  printf ') '
-}
+# git_branch_status() {
+#   git rev-parse --is-inside-work-tree >/dev/null 2>&1 || return
+#
+#   branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null) || return
+#   unstaged_status=$(git diff --shortstat 2>/dev/null)
+#   staged_status=$(git diff --cached --shortstat 2>/dev/null)
+#
+#   added=$(echo "$unstaged_status $staged_status" | grep -oE '[0-9]+ insert' | awk '{s+=$1} END {print s+0}')
+#   removed=$(echo "$unstaged_status $staged_status" | grep -oE '[0-9]+ delet' | awk '{s+=$1} END {print s+0}')
+#
+#   printf '(%s' "$branch"
+#   [ "$added" -ne 0 ] && printf ' +%s' "$added"
+#   [ "$removed" -ne 0 ] && printf ' -%s' "$removed"
+#   printf ') '
+# }
 
 # Run this from your zsh config (e.g., sourced from ~/.config/zsh/extras/functions.zsh)
 docker-ubuntu() {
