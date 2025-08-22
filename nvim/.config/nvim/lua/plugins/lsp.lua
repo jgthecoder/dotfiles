@@ -8,7 +8,7 @@ return {
     },
     config = function()
       require("mason-lspconfig").setup {
-        ensure_installed = { "clangd", "tailwindcss", "lua_ls", "rust_analyzer", "emmet_language_server", "biome" },
+        ensure_installed = { "ruff", "clangd", "pyright", "tailwindcss", "lua_ls", "rust_analyzer", "emmet_language_server", "biome" },
       }
     end,
   },

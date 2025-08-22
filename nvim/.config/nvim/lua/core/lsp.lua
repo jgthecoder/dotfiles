@@ -3,6 +3,7 @@ vim.lsp.enable {
   -- 'emmet_language_server',
   -- 'ts_ls',
   "clangd",
+  "pyright",
   -- 'cpp-lint',
 }
 
