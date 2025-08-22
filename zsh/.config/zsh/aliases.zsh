@@ -38,7 +38,6 @@ alias neovim="NVIM_APPNAME=NeoVim nvim"
 
 alias cp="cp -i"
 alias mv="mv -i"
-alias ps="ps auxf"
 alias less="less -R"
 alias ping="ping -c 10"
 alias da="date '+%Y-%m-%d %A %T %Z'"
@@ -52,7 +51,6 @@ alias .....="cd ../../../.."
 
 alias gs="git status -sb"
 alias gaa="git add -A"
-
 
 alias ls="ls -aFh --color=always" # add colors and file type extensions
 alias la="ls -Alh" # show hidden files
