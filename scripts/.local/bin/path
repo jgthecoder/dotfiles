@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Taken from https://github.com/rwxrob/dot/blob/main/scripts/path
+# Subsitute all all ":" characters with newlines
+echo -e "${PATH//:/\\n}"

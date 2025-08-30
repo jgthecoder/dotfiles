@@ -6,6 +6,7 @@ return {
   ---@module 'render-markdown'
   ---@type render.md.UserConfig
   opts = {},
+  enabled = false,
   config = function()
     require("render-markdown").setup {
       completions = { blink = { enabled = true } },

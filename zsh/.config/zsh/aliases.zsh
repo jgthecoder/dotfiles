@@ -14,7 +14,7 @@ alias py='python3'
 alias mk='make'
 alias serve='python3 -m http.server'
 alias termclock='tty-clock -c -C 4 -S'
-alias screensaver="cmatrix"
+alias screensaver="cmatrix -C blue"
 alias find='fd'
 alias cat='bat -pn' # bat over cat
 
