@@ -30,14 +30,6 @@ return {
     "tpope/vim-sleuth",
   },
   {
-    "echasnovski/mini.nvim",
-    version = "*",
-    config = function()
-      require("mini.sessions").setup()
-    end,
-    enabled = false,
-  },
-  {
     "folke/neoconf.nvim",
     enabled = false,
   },
@@ -103,7 +95,6 @@ return {
     end,
   },
   {
-    enabled = false,
     "j-hui/fidget.nvim",
     opts = {
       notification = {

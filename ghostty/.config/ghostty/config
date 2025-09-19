@@ -1,7 +1,8 @@
-font-family = "MesloLGS Nerd Font"
+#font-family = "MesloLGS Nerd Font"
+font-family = "FiraMono Nerd Font Mono"
 
 font-size = 24
-theme = GruvboxDarkHard
+theme = Gruvbox Dark Hard
 
 adjust-cell-height = 35%
 adjust-cell-width = -5%
@@ -11,5 +12,5 @@ macos-titlebar-style = hidden
 window-padding-x = 20
 #window-padding-y = 20
 
-background-blur = 20
-background-opacity = 0.8
+background-blur = 30
+background-opacity = 0.85
