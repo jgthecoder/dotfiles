@@ -1,0 +1,101 @@
+#/bin/sh
+
+set -ue
+
+# header="
+#  __  __    _    ____ ___  ____    ____  _____ _____ _   _ ____  
+# |  \/  |  / \  / ___/ _ \/ ___|  / ___|| ____|_   _| | | |  _ \ 
+# | |\/| | / _ \| |  | | | \___ \  \___ \|  _|   | | | | | | |_) |
+# | |  | |/ ___ \ |__| |_| |___) |  ___) | |___  | | | |_| |  __/ 
+# |_|  |_/_/   \_\____\___/|____/  |____/|_____| |_|  \___/|_| 
+# "
+
+clear
+
+echo "
+-------------------------------------------------------------------------------------------------------------
+
+     ██╗ ██████╗ ███████╗██╗  ██╗██╗   ██╗ █████╗      ██████╗ ██╗   ██╗███████╗███╗   ███╗ █████╗ ███╗   ██╗
+     ██║██╔═══██╗██╔════╝██║  ██║██║   ██║██╔══██╗    ██╔════╝ ██║   ██║╚══███╔╝████╗ ████║██╔══██╗████╗  ██║
+     ██║██║   ██║███████╗███████║██║   ██║███████║    ██║  ███╗██║   ██║  ███╔╝ ██╔████╔██║███████║██╔██╗ ██║
+██   ██║██║   ██║╚════██║██╔══██║██║   ██║██╔══██║    ██║   ██║██║   ██║ ███╔╝  ██║╚██╔╝██║██╔══██║██║╚██╗██║
+╚█████╔╝╚██████╔╝███████║██║  ██║╚██████╔╝██║  ██║    ╚██████╔╝╚██████╔╝███████╗██║ ╚═╝ ██║██║  ██║██║ ╚████║
+ ╚════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝     ╚═════╝  ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+
+-------------------------------------------------------------------------------------------------------------
+                                      Dotfiles Installation Script
+-------------------------------------------------------------------------------------------------------------
+"
+
+setup_config_files() {
+    read -p "Enter your git username: " gitUsername
+    read -p "Enter your git email: " gitEmail
+    read -p "Enter your prefered git editor: " gitEditor
+    echo $gitUsername
+    echo $gitEmail
+    echo $gitEditor
+}
+
+install_dependencies() {
+  echo "Installing dependencies..."
+  # Add logic code here
+  # if which brew &> /dev/null; then
+  #       brew update
+  #       brew install neovim zoxide bat eza fastfetch zsh-syntax-highlighting tealdeer btop
+  # else
+  #     echo "Package manager not supported. Please install required programs & dependencies manually."
+  # fi
+}
+
+install_plugins() { 
+  echo "Installing plugins..."
+  # Add logic code here
+}
+
+create_symbolic_links() {
+  echo "Symlinking files..."
+  # Add logic code here
+  # ln -vsf "$DIRECTORY/".bashrc $HOME/.bashrc
+  # ln -vsf "$DIRECTORY/".zshrc $HOME/.zshrc
+  # mkdir -p $HOME/.config/fastfetch/
+  # ln -vsf "$DIRECTORY/"fastfetch/config.jsonc $HOME/.config/fastfetch/config.jsonc
+  # ln -vsf "$DIRECTORY/".vitetris $HOME/.vitetris
+  # ln -vsf "$DIRECTORY/"btop.conf $HOME/.config/btop/btop.conf
+}
+
+install_finish() {
+  echo "Finishing installation script..."
+  # Add logic code here
+    	# $PRIVILEGES chsh -s $USER /bin/zsh ### This method doesn't work, you have to change the /etc/passwd login shell to zsh
+	# tldr --update # Cache for tealdeer ;-)
+	# if [ -f $HOME/.bash_history ]; then
+	# 	mkdir -p $HOME/.cache/bash
+	# 	mv $HOME/.bash_history $HOME/.cache/bash/history
+	# fi
+	# if [ -f $HOME/.zsh_history ]; then
+	# 	mkdir -p $HOME/.cache/zsh
+	# 	mv $HOME/.zsh_history $HOME/.cache/zsh/history
+	# fi
+	echo "
+--------------------------------------------------------------------------------------------------------------------------------
+                                                                                                                                
+   ███████╗███████╗████████╗██╗   ██╗██████╗     ██████╗ ██████╗ ███╗   ███╗██████╗ ██╗     ███████╗████████╗███████╗██████╗    
+   ██╔════╝██╔════╝╚══██╔══╝██║   ██║██╔══██╗   ██╔════╝██╔═══██╗████╗ ████║██╔══██╗██║     ██╔════╝╚══██╔══╝██╔════╝██╔══██╗   
+   ███████╗█████╗     ██║   ██║   ██║██████╔╝   ██║     ██║   ██║██╔████╔██║██████╔╝██║     █████╗     ██║   █████╗  ██║  ██║   
+   ╚════██║██╔══╝     ██║   ██║   ██║██╔═══╝    ██║     ██║   ██║██║╚██╔╝██║██╔═══╝ ██║     ██╔══╝     ██║   ██╔══╝  ██║  ██║   
+   ███████║███████╗   ██║   ╚██████╔╝██║        ╚██████╗╚██████╔╝██║ ╚═╝ ██║██║     ███████╗███████╗   ██║   ███████╗██████╔╝   
+   ╚══════╝╚══════╝   ╚═╝    ╚═════╝ ╚═╝         ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚══════╝╚══════╝   ╚═╝   ╚══════╝╚═════╝    
+                                                                                                                                
+--------------------------------------------------------------------------------------------------------------------------------
+"
+}
+
+# TODO: Install zsh from homebrew
+# TODO: Reload shell...
+
+
+install_dependencies
+install_plugins
+setup_config_files
+create_symbolic_links
+install_finish

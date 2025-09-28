@@ -1,0 +1,161 @@
+#/bin/sh
+
+set -ue
+
+# Header designed with : https://www.asciiart.eu/text-to-ascii-art
+
+# Define color codes
+RED='\e[31m'
+GREEN='\e[32m'
+YELLOW='\e[33m'
+BLUE='\e[34m'
+MAGENTA='\e[35m'
+CYAN='\e[36m'
+BOLD='\e[1m'
+RESET='\e[0m'
+
+# Function to print text in a color
+color_print() {
+  color=$1
+  shift
+  printf "%b%s%b\n" "$color" "$*" "$RESET"
+}
+
+# Function to install Homebrew if it doesn't exist
+install_homebrew() {
+  if command -v brew >/dev/null 2>&1; then
+    color_print "$GREEN" "Homebrew is already installed."
+  else
+    color_print "$YELLOW" "Homebrew is not installed. Installing now..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+    # Check if Homebrew installation was successful
+    if command -v brew >/dev/null 2>&1; then
+      color_print "$GREEN" "Homebrew installation completed successfully!"
+    else
+      color_print "$RED" "Homebrew installation failed. Please check your internet connection and try again."
+      exit 1
+    fi
+  fi
+}
+
+  
+
+# Function to wait for user input (any key to continue or 'q' to quit)
+wait_for_input() {
+  color_print "$YELLOW" "Press any key to continue or 'q' to quit..."
+  read -n 1 -r -s input
+
+  if [[ "$input" == "q" ]]; then
+    color_print "$RED" "Exiting the script. Goodbye!"
+    exit 0
+  fi
+}
+
+install_dependencies() {
+  color_print "$YELLOW" "Installing dependencies..."
+  if which brew &> /dev/null; then
+        brew update
+        brew install neovim zoxide bat eza fastfetch zsh-syntax-highlighting tealdeer btop
+  else
+      echo "Package manager not supported. Please install required programs & dependencies manually."
+  fi
+}
+
+## TODO: 
+Install zsh from homebrew
+reload shell...
+
+# header="
+#  __  __    _    ____ ___  ____    ____  _____ _____ _   _ ____  
+# |  \/  |  / \  / ___/ _ \/ ___|  / ___|| ____|_   _| | | |  _ \ 
+# | |\/| | / _ \| |  | | | \___ \  \___ \|  _|   | | | | | | |_) |
+# | |  | |/ ___ \ |__| |_| |___) |  ___) | |___  | | | |_| |  __/ 
+# |_|  |_/_/   \_\____\___/|____/  |____/|_____| |_|  \___/|_| 
+# "
+
+
+
+header=" 	
+-------------------------------------------------------------------------------------------------------------
+
+     ██╗ ██████╗ ███████╗██╗  ██╗██╗   ██╗ █████╗      ██████╗ ██╗   ██╗███████╗███╗   ███╗ █████╗ ███╗   ██╗
+     ██║██╔═══██╗██╔════╝██║  ██║██║   ██║██╔══██╗    ██╔════╝ ██║   ██║╚══███╔╝████╗ ████║██╔══██╗████╗  ██║
+     ██║██║   ██║███████╗███████║██║   ██║███████║    ██║  ███╗██║   ██║  ███╔╝ ██╔████╔██║███████║██╔██╗ ██║
+██   ██║██║   ██║╚════██║██╔══██║██║   ██║██╔══██║    ██║   ██║██║   ██║ ███╔╝  ██║╚██╔╝██║██╔══██║██║╚██╗██║
+╚█████╔╝╚██████╔╝███████║██║  ██║╚██████╔╝██║  ██║    ╚██████╔╝╚██████╔╝███████╗██║ ╚═╝ ██║██║  ██║██║ ╚████║
+ ╚════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝     ╚═════╝  ╚═════╝ ╚══════╝╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+
+-------------------------------------------------------------------------------------------------------------
+                                      Dotfiles Installation Script
+-------------------------------------------------------------------------------------------------------------
+"
+
+
+clear
+color_print "$BLUE" "$header"
+
+install_dependencies
+
+#
+# color_print "$GREEN" "This macOS setup script automates the installation"
+# color_print "$GREEN" "and configuration of essential tools, applications,"
+# color_print "$GREEN" "and system settings for a clean, efficient, and"
+# color_print "$GREEN" "minimal workspace."
+# printf "\n"
+#
+# color_print "$GREEN" "It includes package management with Homebrew,"
+# color_print "$GREEN" "shell and terminal enhancements, developer tools,"
+# color_print "$GREEN" "productivity apps, and system tweaks to streamline"
+# color_print "$GREEN" "workflows."
+#
+# printf "\n"
+# color_print "$GREEN" "The script is designed to be modular, allowing"
+# color_print "$GREEN" "customization based on individual preferences."
+#
+# # Wait for user input
+# wait_for_input
+#
+# # Install Homebrew
+# color_print "$CYAN" "Checking for Homebrew installation..."
+# install_homebrew
+#
+# # Continue with the rest of the script
+# color_print "$GREEN" "Continuing with the setup..."
+# # Add the rest of your script here
+#
+# # Example of reusing the function
+# color_print "$CYAN" "This is another section of the script."
+# wait_for_input
+#
+# color_print "$GREEN" "Continuing further..."
+# var="value"
+
+
+
+# echo "Enter your name:"
+# read name
+#
+# echo "Hello World" | grep "lo"
+#
+# if [ "$var" = "value" ]; then
+#     echo "Match"
+# fi
+#
+# if command -v grep >/dev/null; then
+#     echo "grep is available"
+# fi
+#
+# echo "$var"   # Always use double quotes
+#
+# [ "$var" = "value" ]  # Instead of [[ ]]
+#
+# for i in 1 2 3; do
+#     echo "$i"
+# done
+#
+# while read line; do
+#     echo "$line"
+# done << file.txt
+#
+# command >/dev/null 2>&1

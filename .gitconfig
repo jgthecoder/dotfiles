@@ -1,0 +1,102 @@
+[user]
+    name = Joshua Guzman
+    email = jg-the-coder@gmail.com
+
+[commit]
+    template = ~/.config/git/template
+    verbose = true
+
+[core]
+    editor = "nvim"
+    compression = 9
+    whitespace = error
+    preloadindex = true
+    excludesfile = ~/.gitignore_global
+
+[advice]
+    addEmptyPathspec = false
+    pushNonFastForward = false
+    statusHints = false
+
+[url "git@github.com:jg-the-coder/"]
+    insteadOf = "jg:"
+
+[interactive]
+    diffFilter = diff-so-fancy --patch
+    singleKey = true
+
+[color "diff"]
+    meta = black bold
+    frag = magenta
+    context = white
+    whitespace = yellow reverse
+    old = red
+
+[diff]
+    context = 3
+    renames = copies
+    interHunkContext = 10
+
+[pager]
+    diff = diff-so-fancy | $PAGER
+    branch = false
+    tag = false
+
+[diff-so-fancy]
+    markEmptyLines = false
+
+[url "git@github.com"]
+    insteadOf = "gh:"
+
+[credential]
+    username = jg-the-coder
+
+[init]
+    defaultBranch = main
+
+[status]
+    branch = true
+    showStash = true
+    showUntrackedFiles = all
+
+[alias]
+	staash = stash --all
+	statuss = status -s
+	lg = log --all --graph --format=oneline
+
+[pull]
+	rebase = true
+    default = current
+
+[rebase]
+    autoStash = true
+    missingCommitsCheck = warn
+
+[branch]
+    sort = -committerdate
+
+[tag]
+    sort = -taggerdate
+
+[push]
+    autoSetupRemote = true
+	default = current
+    followTags = true
+
+[log]
+    abbrevCommit = true
+    graphColors = blue,yellow,cyan,magenta,green,red
+
+[color "decorate"]
+    HEAD = red
+    branch = blue
+    tag = yellow
+    remoteBranch = magenta
+
+[color "branch"]
+    current = magenta
+    local = default
+    remote = yellow
+    upstream = green
+    plain = blue
+

@@ -1,0 +1,88 @@
+{
+  // Editor
+  "editor.fontFamily": "MesloLGS Nerd Font,IosevkaTerm Nerd Font,SFMono Nerd Font,JetBrains Mono,Consolas,Menlo,Courier New,monospace",
+  "editor.fontSize": 18,
+  "editor.fontLigatures": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.guides.indentation": false,
+  "editor.renderWhitespace": "none",
+  "editor.lightbulb.enabled": "off",
+  "editor.hover.enabled": true,
+  "editor.hover.delay": 600,
+  "editor.overviewRulerBorder": false,
+  "editor.detectIndentation": false,
+  "editor.lineHeight": 2.0,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "expand",
+  "editor.linkedEditing": true,
+  "editor.pasteAs.preferences": ["text.plain"],
+  "editor.stickyScroll.enabled": false,
+  "editor.cursorWidth": 3,
+
+  // Aesthetic
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  // "window.zoomLevel": 2,
+  "material-icon-theme.hidesExplorerArrows": true,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+
+  // Workbench
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "material-icon-theme",
+  // "workbench.fontAliasing": "antialiased",
+  "workbench.settings.editor": "json",
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "hidden",
+  // "workbench.editor.showTabs": "none",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "extensions.ignoreRecommendations": true,
+
+  // Files
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": false,
+    "**/.vscode": false
+    // "**/node_modules": true
+  },
+  "files.insertFinalNewline": true,
+  "files.autoSave": "afterDelay",
+
+  // Python
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "standard",
+
+  // Terminal
+  "terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+  "terminal.integrated.fontSize": 16,
+  // "terminal.integrated.tabs.enabled": false,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "terminal.integrated.splitCwd": "workspaceRoot",
+
+  // "git.autofetch": true,
+  // "git.confirmSync": false,
+
+  // Misc
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "javascript": false
+    // "json": false
+    // "jsonc": false
+  },
+  "workbench.editor.customLabels.patterns": {
+    "**/{layout,page}.tsx": "${dirname} ${filename}"
+  },
+  "workbench.colorTheme": "Catppuccin Noir High Contrast",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.statusBar.visible": false
+}

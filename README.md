@@ -1,32 +1,57 @@
-# Dotfiles
+# dotfiles
 
-## Installation
+My personal system configuration. Includes terminal settings, aliases, editor
+config, and basic setup scripts.
 
-1. Clone the repo.
-```sh
-git clone git@github.com:jgthecoder/dotfiles.git $HOME/dotfiles
+## Contents
+
+- `zshrc`: shell aliases, functions, paths
+- `gitconfig`: Git settings and shortcuts
+- `vimrc`: Vim config (or use Neovim under `.config/nvim`)
+- `setup.sh`: setup script for fresh machines
+
+## Usage
+
+```bash
+git clone https://github.com/yourusername/dotfiles.git
+cd dotfiles
+bash setup.sh
 ```
 
-2. Install homebrew.
-```sh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
+## Apps
 
-> 🚧 Warning
->
-> Don't forget to run the commands at the end of the homebrew install!
-> Otherwise, homebrew will not be added to your path!
-
-3. Install the cli tools and casks from the Brewfile.
-```sh
-brew bundle --file="$HOME/dotfiles/Brewfile"
-```
-
-4. Stow the dotfiles repo
-```sh
-stow $HOME/dotfiles
-```
-
-## Recommended Apps
-
+- Rectangle
+- Raycast
+- Shottr
 - F.lux -> remove blue light from your screen at night
+
+## Chrome Extensions
+
+- Dark Reader
+- ImproveTube
+- 1Password
+- Adblock for Youtube
+- PrintFriendly
+
+## Neovim
+
+### Plugin Manager
+- lazy.nvim
+
+
+## Stow
+
+### Install with stow
+
+```sh
+stow --target $HOME/.config .
+```
+
+### Homebrew installation
+
+Leaving a machine
+`brew leaves > leaves.txt`
+
+Fresh install
+`xargs brew install < leaves.txt`
+>>>>>>> cdfa099 (Miscellaneous changes)
