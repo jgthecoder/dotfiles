@@ -1,12 +1,13 @@
 return {
-  'nvim-treesitter/nvim-treesitter',
-  build = ':TSUpdate',
+  "nvim-treesitter/nvim-treesitter",
+  version = "0.10.0",
+  build = ":TSUpdate",
   config = function()
-    local configs = require 'nvim-treesitter.configs'
+    local configs = require "nvim-treesitter.configs"
 
     ---@diagnostic disable-next-line: missing-fields
     configs.setup {
-      ensure_installed = { 'cpp', 'typescript', 'tsx', 'python', 'go', 'markdown', 'c', 'lua', 'vim', 'vimdoc', 'javascript', 'html' },
+      ensure_installed = { "cpp", "typescript", "typst", "json", "tsx", "python", "go", "markdown", "c", "lua", "vim", "vimdoc", "javascript", "html" },
       sync_install = false,
       highlight = {
         enable = true,

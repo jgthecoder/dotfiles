@@ -1,4 +1,22 @@
-local colorschemes = {
+-- existing table
+local colorschemes = {}
+
+--- Add or merge new colorschemes into the existing table
+--- @param new_schemes table: a table of new colorschemes
+function AddColorschemes(new_schemes)
+  if type(new_schemes) ~= "table" then
+    error "AddColorschemes: argument must be a table"
+  end
+
+  for name, scheme in pairs(new_schemes) do
+    if colorschemes[name] ~= nil then
+      vim.notify(string.format("[colorschemes] Overwriting existing scheme '%s'", name), vim.log.levels.WARN)
+    end
+    colorschemes[name] = scheme
+  end
+end
+
+AddColorschemes {
   onedark = {
     "navarasu/onedark.nvim",
     priority = 1000, -- make sure to load this before all the other start plugins
@@ -143,6 +161,12 @@ local colorschemes = {
       -- vim.cmd(":hi statusline guibg=NONE")
     end,
   },
+  meh = {
+    "davidosomething/vim-colors-meh",
+    config = function()
+      vim.cmd.colorscheme "meh"
+    end,
+  },
   catppuccin = {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -250,8 +274,31 @@ local colorschemes = {
       vim.cmd.colorscheme "kanagawa-wave"
     end,
   },
+  komau = {
+    "ntk148v/komau.vim",
+    config = function()
+      vim.cmd.colorscheme "komau"
+    end,
+  },
 }
 
-local selected = colorschemes.gruvbox_material
+AddColorschemes {
+  rams = {
+    "stefanvanburen/rams.vim",
+    config = function()
+      vim.cmd.colorscheme "rams"
+    end,
+  },
+}
 
+AddColorschemes {
+  atlas = {
+    "huyvohcmc/atlas.vim",
+    config = function()
+      vim.cmd.colorscheme "atlas"
+    end,
+  },
+}
+
+local selected = colorschemes.atlas
 return selected

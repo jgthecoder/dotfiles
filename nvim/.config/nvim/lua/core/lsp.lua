@@ -4,6 +4,7 @@ vim.lsp.enable {
   -- 'ts_ls',
   "clangd",
   "pyright",
+  "tinymist",
   -- 'cpp-lint',
 }
 

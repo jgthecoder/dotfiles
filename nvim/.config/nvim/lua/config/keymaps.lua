@@ -88,3 +88,13 @@ vim.keymap.set("t", "<esc><esc>", "<C-\\><C-n>", opts)
 vim.keymap.set("n", "gl", function()
   vim.diagnostic.open_float()
 end, { desc = "Open diagnostics in float" })
+
+-- Example function using vim.ui.input
+function create_route()
+  vim.ui.input({ prompt = "Route: " }, function(path)
+    os.execute("mkdir -p example/route/" .. path)
+    vim.cmd("edit example/path/" .. path .. "/+foo.bar")
+  end)
+end
+
+vim.keymap.set("n", "<leader>c", create_route)
