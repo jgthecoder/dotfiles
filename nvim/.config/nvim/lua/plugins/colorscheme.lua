@@ -300,5 +300,5 @@ AddColorschemes {
   },
 }
 
-local selected = colorschemes.atlas
+local selected = colorschemes.nordic
 return selected

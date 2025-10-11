@@ -20,4 +20,7 @@ case ":$PATH:" in
 esac
 
 # -- Path --
-export PATH="$PATH:$HOME/.local/bin/"
+export PATH="$PATH:$HOME/.local/bin"
+
+# -- bat --
+export BAT_THEME=Nord

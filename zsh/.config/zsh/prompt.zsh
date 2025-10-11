@@ -1,7 +1,9 @@
 #!/usr/bin/env zsh
 
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# prompt pure
+
+eval "$(starship init zsh)"
 
 # # Autoload zsh's `add-zsh-hook` and `vcs_info` functions
 # # (-U autoload w/o substition, -z use zsh style)

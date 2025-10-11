@@ -11,7 +11,7 @@ vim.keymap.set("n", "<s-tab>", ":bprev<cr>", opts)
 
 -- Make life easier
 vim.keymap.set("n", "<leader>w", "<cmd>up<cr>")
-vim.keymap.set("n", ";", ":")
+-- vim.keymap.set("n", ";", ":")
 vim.keymap.set("i", "jk", "<esc>")
 
 -- Move lines up or down
@@ -30,6 +30,8 @@ vim.keymap.set("v", "<", "<gv")
 -- Centering
 vim.keymap.set("n", "n", "nzz", opts)
 vim.keymap.set("n", "N", "Nzz", opts)
+vim.keymap.set("n", "<C-u>", "<C-u>zz", opts)
+vim.keymap.set("n", "<C-d>", "<C-d>zz", opts)
 vim.keymap.set("x", "p", '"_dp')
 vim.keymap.set("x", "P", '"_dP')
 
@@ -89,12 +91,12 @@ vim.keymap.set("n", "gl", function()
   vim.diagnostic.open_float()
 end, { desc = "Open diagnostics in float" })
 
--- Example function using vim.ui.input
-function create_route()
-  vim.ui.input({ prompt = "Route: " }, function(path)
-    os.execute("mkdir -p example/route/" .. path)
-    vim.cmd("edit example/path/" .. path .. "/+foo.bar")
-  end)
-end
-
-vim.keymap.set("n", "<leader>c", create_route)
+-- -- Example function using vim.ui.input
+-- local function create_route()
+--   vim.ui.input({ prompt = "Route: " }, function(path)
+--     os.execute("mkdir -p example/route/" .. path)
+--     vim.cmd("edit example/path/" .. path .. "/+foo.bar")
+--   end)
+-- end
+--
+-- vim.keymap.set("n", "<leader>c", create_route)
