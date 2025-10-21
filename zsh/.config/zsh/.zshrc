@@ -1,5 +1,13 @@
 #!/usr/bin/env zsh
 
+#          _
+#         | |
+#  _______| |__  _ __ ___
+# |_  / __| '_ \| '__/ __|
+#  / /\__ \ | | | | | (__
+# /___|___/_| |_|_|  \___|
+#
+
 # Author: jgthecoder <jgthecoder@gmail.com>
 # Date: July 2025
 

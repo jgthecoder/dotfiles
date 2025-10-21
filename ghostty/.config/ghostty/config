@@ -1,7 +1,7 @@
-font-family = "Inconsolata Nerd Font"
+font-family = "MesloLGM Nerd Font"
 #font-family = "FiraMono Nerd Font Mono"
 
-font-size = 24
+font-size = 20
 theme = Nord
 
 #adjust-cell-height = 35%
@@ -16,6 +16,6 @@ window-padding-y = 20
 #background-opacity = 0.85
 
 #background = #0a0a0a
-background = #212121
+background = #111
 
 keybind = global:cmd+`=toggle_quick_terminal
